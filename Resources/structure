@@ -1,0 +1,24 @@
+project/
+├── src/                  # <-- all importable code lives here
+│   ├── core/             # Business logic, reusable across services
+│   ├── api/              # FastAPI (or Flask, gRPC) endpoints
+│   ├── data/             # ETL helpers, dataset loaders
+│   ├── models/           # ML/DL model classes + training loops
+│   ├── utils/            # Tiny helpers: logging, timers, etc.
+│   └── config/           # Pydantic or YAML-backed settings
+├── tests/                # Pytest lives here
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── notebooks/            # Exploratory Jupyter work
+├── docs/                 # Markdown guides
+│   ├── api/
+│   ├── usage/
+│   └── development/
+├── conf/                 # Runtime configs (local, test, prod)
+├── scripts/              # One-off CLI helpers, CI hooks
+├── .github/workflows/    # CI/CD pipelines
+├── Dockerfile & docker-compose.yml
+├── Makefile              # `make test`, `make lint`, etc.
+├── pyproject.toml        # Packaging + tool configs
+└── requirements/         # base.txt, dev.txt, prod.txt
