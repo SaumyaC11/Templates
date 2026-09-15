@@ -2,7 +2,7 @@
 
 ## Session Start
 
-Read `README.md` at the start of every session before making infrastructure, testing, or CI-related decisions — it documents which services are real/managed (DigitalOcean Postgres and Weaviate) versus local (Docker Redis), and the unit vs. integration test conventions. Do not assume a service can be swapped for a Docker container without checking it first.
+Read `README.md` at the start of every session before making infrastructure, testing, or CI-related decisions — it documents which services are real/managed versus local, and the unit vs. integration test conventions. Do not assume a service can be swapped for a Docker container without checking it first.
 
 ## Core Principles
 
@@ -13,6 +13,7 @@ Read `README.md` at the start of every session before making infrastructure, tes
 5. Apply proper **error handling** and consistent **naming conventions** throughout.Along with **idempotency** and **retry-safety**.
 6. Do only what is required — do not over-deliver or add unrequested features.
 7. Use appropriate **data structures** whenever possible.
+8. At the end of a session always tell how can I recreate the outputs you got
 
 ---
 
